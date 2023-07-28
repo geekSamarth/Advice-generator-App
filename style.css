@@ -28,6 +28,30 @@
     padding: 25px;
     text-align: center;
 }
-.partitionImage{
-    background-image: url('./images/pattern-divider-mobile.svg');
+.partitionImage img{
+    width: 100%;
 }
+.dicebtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    border: none;
+    border-radius: 50%;
+    padding: 20px;
+    margin-top: -50px;
+    background-color: var(--neon-green);
+    cursor: pointer;
+}
+.btn img{
+    margin:0 auto 0 auto;
+}
+.btn:hover{
+    box-shadow: 0 0 25px 8px var(--neon-green);
+    transition: box-shadow 0.1s ease;
+}
+
+
+
+

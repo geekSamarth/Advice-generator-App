@@ -15,6 +15,7 @@
 .content_wrapper{
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: var(--dark-blue);
@@ -27,7 +28,6 @@
     padding: 25px;
     text-align: center;
 }
-
-.container .partitionImage img{
-    width: 95%;
+.partitionImage{
+    background-image: url('./images/pattern-divider-mobile.svg');
 }

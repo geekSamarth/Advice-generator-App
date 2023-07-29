@@ -15,28 +15,25 @@
 .content_wrapper {
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: var(--dark-blue);
 }
 .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   width: 34rem;
-  max-width: 95%;
+  max-width: 90%;
   background-color: var(--dark-grayish-blue);
   border-radius: 10px;
   padding: 2.4rem;
   text-align: center;
 }
 .container span {
+  display: block;
   font-size: 18px;
   word-spacing: 0.5rem;
   text-transform: uppercase;
   color: var(--neon-green);
-  margin-bottom: 1rem;
+  margin-bottom: 1.4rem;
 }
 #adviceId {
   font-size: 18px;
@@ -45,46 +42,52 @@
 }
 .generatedAdvice {
   width: 100%;
-  height: 6rem;
-  font-size: 24px;
+  height: 7rem;
+  font-size: 1.5rem;
+  word-spacing: 2px;
   color: var(--ligh-cyan);
   margin-top: 0.5rem;
+  margin-bottom: 2.5rem;
+  padding:0 2rem;
+  line-height: 1.5;
+}
+#divider{
+  width: 100%;
   margin-bottom: 2rem;
 }
-.partitionImage {
-  width: 100%;
-  margin: 1.5rem 0;
-}
-.partitionImage img {
-  width: 100%;
-}
-.dicebtn {
+.diceBtn {
+  width: 4rem;
+  height: 4rem;
+  border: 1px solid var(--neon-green);
+  border-radius: 50%;
+  background-color: var(--neon-green);
+  padding: 1rem;
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
+  align-self: center;
+  margin: 0 auto;
+  margin-bottom: -70px;
 }
-.btn {
-  border: none;
-  border-radius: 50%;
-  padding: 20px;
-  margin-top: -50px;
-  background-color: var(--neon-green);
-  cursor: pointer;
-}
-.btn img {
-  margin: 2px 2px 0 2px;
-}
-.btn:hover {
-  box-shadow: 0 0 2rem var(--neon-green);
+.diceBtn:hover {
+  box-shadow: 0 0 20px 5px var(--neon-green);
   transition: box-shadow 0.1s ease;
 }
 
 /* adding media queries for responsive design */
 
 @media screen and (max-width: 500px) {
-  .generatedAdvice{
+  .container span{
+    font-size: 16px;
+  }
+  #adviceId{
+    font-size: 16px;
+  }
+  .generatedAdvice {
     height: auto;
-    font-size: 22px;
+    font-size: 20px;
+    padding: 0;
   }
   #divider {
     content: url("./images/pattern-divider-mobile.svg");
